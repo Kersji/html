@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+  </head>
+  <body>
+    <header id="header">
+      <nav></nav>
+      <div>
+        <ul>
+          <li><a></a></li>
+        </ul>
+      </div>
+      <section>
+        <div>
+          <p class="headerParagraph" id="p1"></p>
+          <p class="headerParagraph" id="p2"></p>
+          <p class="headerParagraph" id="p3"></p>
+        </div>
+      </section>
+    </header>
+    <main>
+      <p class="mainParagraph"></p>
+    </main>
+    <footer></footer>
+    <script>
+      let headerParagraphs = document.querySelectorAll('.headerParagraph');
+      headerParagraphs.forEach((element) => {
+        element.innerHTML = 'Hello';
+      });
+
+      let p1 = document.querySelector('#p1');
+      p1.style.color = 'red';
+    </script>
+  </body>
+</html>
